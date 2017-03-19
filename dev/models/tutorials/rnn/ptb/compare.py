@@ -318,7 +318,7 @@ def get_config():
 def main(_):
   if not FLAGS.data_path:
     raise ValueError("Must set --data_path to PTB data directory")
-    ##TODO tf.flags랑 tf.app.run()안의 flag 랑 같은거 인지 확인 (id)로
+    ##TODO tf.flags랑 tf.app.run()안의 flag 랑 같은거 인지 확인 (id)로 :: 같은거임
   raw_data = reader.ptb_raw_data(FLAGS.data_path)
   train_data, valid_data, test_data, _ = raw_data
 
